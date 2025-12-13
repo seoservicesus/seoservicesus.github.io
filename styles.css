@@ -1126,5 +1126,5 @@ body {
 
 .detailed-service-card {
   background-color: var(--color-white);
-  border: var(--border-width) solid var(--color-border); /* Corrected missing character and incomplete property */
+  border: var(--border-width) solid var(--color-border);
 }
