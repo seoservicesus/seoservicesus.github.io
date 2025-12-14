@@ -3,207 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Get Your Free Website Audit | SEO Services US</title>
-    <meta name="description" content="Contact SEO Services US for a free website audit and consultation. Let's discuss how we can boost your search rankings and organic traffic.">
-    <link rel="canonical" href="https://seoservicesus.github.io/contact.html">
+    <meta name="description" content="Get in touch with SEO Services US for professional SEO consulting, free audit, and customized strategy.">
+    <meta name="keywords" content="contact SEO, free SEO audit, SEO consultant, SEO strategy consultation">
+    <title>Contact SEO Services US - Get a Free Audit</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://seoservicesus.github.io/contact">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="nav">
         <div class="container nav-container">
-            <a href="index.html" class="logo">SEO<span class="logo-accent">SERVICES</span></a>
+            <a href="/" class="logo">SEO<span class="logo-accent">SERVICES</span></a>
             <button class="menu-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav-menu">
-                <li><a href="services.html">Services</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#products">Products</a></li>
                 <li><a href="index.html#plugins">Plugins</a></li>
                 <li><a href="index.html#hosting">Hosting</a></li>
-                <li><a href="contact.html" class="nav-cta">Contact</a></li>
+                <li><a href="contact.html" class="nav-cta">Get Started</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Contact Hero -->
-    <section class="contact-hero">
+    <section class="services-page-hero">
+        <div class="container services-hero-content">
+            <h1 class="services-page-title">
+                <span class="title-line">READY TO</span>
+                <span class="title-line accent">CONNECT?</span>
+            </h1>
+            <p class="services-hero-description">Let's start the conversation about your website's search performance. Fill out the form below to request a **Free SEO Audit** or a custom consultation.</p>
+        </div>
+    </section>
+
+    <section id="contact-form" class="plugins-section" style="background-color: var(--color-bg);">
         <div class="container">
-            <div class="contact-hero-content">
-                <h1 class="contact-hero-title">
-                    <span class="hero-title-line">LET'S TALK</span>
-                    <span class="hero-title-line hero-title-primary">ABOUT YOUR</span>
-                    <span class="hero-title-line">SEO GOALS</span>
-                </h1>
-                <p class="contact-hero-subtitle">Get a FREE website audit worth $500 and discover how to dominate search rankings</p>
+            <div class="section-header">
+                <h2 class="section-title">REQUEST YOUR FREE AUDIT</h2>
+                <p class="section-subtitle">A professional audit report will be sent to your email within 48 hours.</p>
             </div>
             
-            <div class="contact-hero-badge">
-                <div class="badge-icon">🎁</div>
-                <div class="badge-text">
-                    <strong>FREE AUDIT</strong>
-                    <span>Limited Time Offer</span>
-                </div>
+            <div class="contact-form-container" style="max-width: 800px; margin: 0 auto; background-color: var(--color-white); padding: var(--spacing-lg); border: var(--border-width) solid var(--color-border); box-shadow: 10px 10px 0 var(--color-primary);">
+                <form action="/submit-contact" method="POST" class="form-style">
+                    <div class="form-group" style="margin-bottom: var(--spacing-md);">
+                        <label for="name" style="display: block; font-weight: 700; margin-bottom: var(--spacing-xs); text-transform: uppercase;">Full Name</label>
+                        <input type="text" id="name" name="name" required style="width: 100%; padding: var(--spacing-sm); border: var(--border-width) solid var(--color-border); font-size: 1rem; background-color: var(--color-bg);">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: var(--spacing-md);">
+                        <label for="email" style="display: block; font-weight: 700; margin-bottom: var(--spacing-xs); text-transform: uppercase;">Email Address</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: var(--spacing-sm); border: var(--border-width) solid var(--color-border); font-size: 1rem; background-color: var(--color-bg);">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: var(--spacing-md);">
+                        <label for="website" style="display: block; font-weight: 700; margin-bottom: var(--spacing-xs); text-transform: uppercase;">Website URL (For Free Audit)</label>
+                        <input type="url" id="website" name="website" required style="width: 100%; padding: var(--spacing-sm); border: var(--border-width) solid var(--color-border); font-size: 1rem; background-color: var(--color-bg);" placeholder="https://example.com">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: var(--spacing-md);">
+                        <label for="message" style="display: block; font-weight: 700; margin-bottom: var(--spacing-xs); text-transform: uppercase;">How Can We Help?</label>
+                        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: var(--spacing-sm); border: var(--border-width) solid var(--color-border); font-size: 1rem; background-color: var(--color-bg); resize: vertical;"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">Send Message & Get Audit</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
+    <section class="cta-section" style="border-bottom: var(--border-width) solid var(--color-secondary);">
         <div class="container">
-            <div class="contact-grid">
-                <!-- Contact Form -->
-                <div class="contact-form-wrapper">
-                    <div class="section-label">REACH OUT</div>
-                    <h2 class="section-title">Send Us a Message</h2>
-                    <p class="section-subtitle">Fill out the form below and we'll get back to you within 24 hours with your free audit report.</p>
-                    
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName">First Name*</label>
-                                <input type="text" id="firstName" name="firstName" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName">Last Name*</label>
-                                <input type="text" id="lastName" name="lastName" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email Address*</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="website">Website URL*</label>
-                            <input type="url" id="website" name="website" placeholder="https://yourwebsite.com" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="service">Service Interested In*</label>
-                            <select id="service" name="service" required>
-                                <option value="">Select a service</option>
-                                <option value="on-page">On-Page SEO</option>
-                                <option value="off-page">Off-Page SEO</option>
-                                <option value="technical">Technical SEO</option>
-                                <option value="local">Local SEO</option>
-                                <option value="ecommerce">E-commerce SEO</option>
-                                <option value="audit">SEO Audit Only</option>
-                                <option value="custom">Custom Package</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="budget">Monthly Budget*</label>
-                            <select id="budget" name="budget" required>
-                                <option value="">Select your budget</option>
-                                <option value="starter">$99 - $499 (Starter)</option>
-                                <option value="professional">$500 - $999 (Professional)</option>
-                                <option value="enterprise">$1000+ (Enterprise)</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Tell Us About Your Goals*</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
-                        </div>
-
-                        <div class="form-checkbox">
-                            <input type="checkbox" id="audit" name="audit" checked>
-                            <label for="audit">Yes! I want my FREE website audit ($500 value)</label>
-                        </div>
-
-                        <div class="form-checkbox">
-                            <input type="checkbox" id="newsletter" name="newsletter">
-                            <label for="newsletter">Subscribe to SEO tips and insights</label>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-large btn-full">
-                            SEND MESSAGE & GET FREE AUDIT
-                        </button>
-
-                        <p class="form-note">We respect your privacy. Your information is 100% secure and will never be shared.</p>
-                    </form>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="contact-info-wrapper">
-                    <div class="contact-info-card">
-                        <div class="section-label">GUARANTEED RESPONSE</div>
-                        <h3 class="info-title">24-Hour Response Time</h3>
-                        <p class="info-text">We value your time. Our SEO experts will review your website and respond with a detailed audit within 24 hours.</p>
-                    </div>
-
-                    <div class="contact-info-card highlight">
-                        <div class="info-icon">📧</div>
-                        <h4 class="info-label">Email Us</h4>
-                        <a href="mailto:hello@seoservicesus.com" class="info-link">hello@seoservicesus.com</a>
-                    </div>
-
-                    <div class="contact-info-card highlight">
-                        <div class="info-icon">📞</div>
-                        <h4 class="info-label">Call Us</h4>
-                        <a href="tel:+18005551234" class="info-link">+1 (800) 555-1234</a>
-                        <p class="info-note">Mon-Fri: 9AM - 6PM EST</p>
-                    </div>
-
-                    <div class="contact-info-card highlight">
-                        <div class="info-icon">💬</div>
-                        <h4 class="info-label">Live Chat</h4>
-                        <p class="info-text">Available Mon-Fri</p>
-                        <button class="btn btn-secondary">Start Chat</button>
-                    </div>
-
-                    <div class="contact-info-card">
-                        <h4 class="info-label">What You'll Get:</h4>
-                        <ul class="info-list">
-                            <li>✓ Complete technical SEO audit</li>
-                            <li>✓ On-page optimization analysis</li>
-                            <li>✓ Backlink profile review</li>
-                            <li>✓ Competitor comparison</li>
-                            <li>✓ Custom action plan</li>
-                            <li>✓ 30-minute strategy call</li>
-                        </ul>
-                    </div>
+            <div class="cta-content">
+                <h2 class="cta-title">PREFER TO TALK?</h2>
+                <p class="cta-description" style="color: var(--color-accent);">Call us directly or send an email for faster response times on urgent matters.</p>
+                <div class="cta-buttons">
+                    <div style="font-size: 1.5rem; font-weight: 900; color: var(--color-white); margin-right: var(--spacing-md);">📞 +1 (800) 555-SEOS</div>
+                    <div style="font-size: 1.5rem; font-weight: 900; color: var(--color-white);">📧 contact@seoservices.us</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust Section -->
-    <section class="trust-section">
-        <div class="container">
-            <div class="trust-grid">
-                <div class="trust-card">
-                    <div class="trust-number">500+</div>
-                    <div class="trust-label">Websites Optimized</div>
-                </div>
-                <div class="trust-card">
-                    <div class="trust-number">2.5M+</div>
-                    <div class="trust-label">Keywords Ranked</div>
-                </div>
-                <div class="trust-card">
-                    <div class="trust-number">98%</div>
-                    <div class="trust-label">Client Satisfaction</div>
-                </div>
-                <div class="trust-card">
-                    <div class="trust-number">24/7</div>
-                    <div class="trust-label">Support Available</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -234,23 +116,23 @@
                     <h3 class="footer-widget-title">Pages</h3>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/case-studies">Case Studies</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-widget">
                     <h3 class="footer-widget-title">Services</h3>
                     <ul class="footer-links">
-                        <li><a href="onpage-seo.html">On-Page SEO</a></li>
-                        <li><a href="offpage-seo.html">Off-Page SEO</a></li>
-                        <li><a href="technical-seo.html">Technical SEO</a></li>
-                        <li><a href="#">Local SEO</a></li>
-                        <li><a href="#">E-commerce SEO</a></li>
-                        <li><a href="#">SEO Audit</a></li>
+                        <li><a href="/services/on-page-seo">On-Page SEO</a></li>
+                        <li><a href="/services/off-page-seo">Off-Page SEO</a></li>
+                        <li><a href="/services/technical-seo">Technical SEO</a></li>
+                        <li><a href="/services/local-seo">Local SEO</a></li>
+                        <li><a href="/services/ecommerce-seo">E-commerce SEO</a></li>
+                        <li><a href="/services/seo-audit">SEO Audit</a></li>
                     </ul>
                 </div>
 
@@ -265,30 +147,11 @@
             </div>
 
             <div class="footer-bottom">
-                <p class="footer-credits">© 2025 SEO Services US. All rights reserved. | Designed & Developed for SEO Excellence</p>
+                <p class="footer-credits">© 2025 SEO Services US. All rights reserved. | Designed & Developed with ❤️ for SEO Excellence</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        // Form submission handler
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Show success message
-            alert('Thank you! We\'ve received your message and will send your FREE website audit within 24 hours.');
-            
-            // Reset form
-            this.reset();
-            
-            // In production, send data to your backend
-            console.log('Form data:', data);
-        });
-    </script>
 </body>
 </html>
