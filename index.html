@@ -1,6 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      /* 1. Organization / LocalBusiness Schema - For the Company */
+      "@type": ["LocalBusiness", "Organization"],
+      "@id": "https://seoservicesus.github.io/#organization",
+      "name": "SEO Services US",
+      "url": "https://seoservicesus.github.io",
+      "logo": "URL_TO_YOUR_LOGO_IMAGE",
+      "description": "Professional SEO Services - On-page, Off-page, and Technical SEO solutions to boost your website rankings. Expert SEO consulting and optimization services.",
+      "telephone": "+92 3402324446",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "21",
+        "addressLocality": "California",
+        "addressRegion": "California",
+        "postalCode": "96162",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "YOUR_TWITTER_PROFILE_URL",
+        "YOUR_LINKEDIN_PROFILE_URL",
+        "YOUR_FACEBOOK_PROFILE_URL"
+      ],
+      "knowsAbout": "Search Engine Optimization, On-Page SEO, Off-Page SEO, Technical SEO, WordPress Plugins, Web Hosting",
+      "serviceArea": {
+        "@type": "AdministrativeArea",
+        "name": "United States"
+      },
+      "areaServed": "Worldwide"
+    },
+    {
+      /* 2. WebSite Schema - Enables Sitelinks Searchbox */
+      "@type": "WebSite",
+      "@id": "https://seoservicesus.github.io/#website",
+      "url": "https://seoservicesus.github.io",
+      "name": "SEO Services US - Professional Search Engine Optimization",
+      "description": "Boost your rankings with professional SEO services. On-page, Off-page, and Technical SEO solutions.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://seoservicesus.github.io/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      /* 3. WebPage Schema - For the Home Page */
+      "@type": "WebPage",
+      "@id": "https://seoservicesus.github.io/#webpage",
+      "url": "https://seoservicesus.github.io",
+      "name": "SEO Services US - Professional Search Engine Optimization",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://seoservicesus.github.io/#website"
+      },
+      "about": {
+        "@id": "https://seoservicesus.github.io/#organization"
+      },
+      "primaryImageOfPage": "URL_TO_HERO_IMAGE_OR_OG_IMAGE"
+    },
+    {
+      /* 4. BreadcrumbList Schema - For Main Nav (Assuming this is the root home page) */
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://seoservicesus.github.io"
+        }
+      ]
+    },
+    {
+      /* 5. ItemList for Services (Service Type) */
+      "@type": "ItemList",
+      "name": "Our SEO Services",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Service",
+            "name": "ON-PAGE SEO",
+            "url": "https://seoservicesus.github.io/services/on-page-seo",
+            "serviceType": "On-Page SEO",
+            "description": "Optimize your content, meta tags, headers, and internal linking structure for better search engine rankings."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Service",
+            "name": "OFF-PAGE SEO",
+            "url": "https://seoservicesus.github.io/services/off-page-seo",
+            "serviceType": "Off-Page SEO",
+            "description": "Build high-quality backlinks, improve domain authority, and establish your brand across the web."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Service",
+            "name": "TECHNICAL SEO",
+            "url": "https://seoservicesus.github.io/services/technical-seo",
+            "serviceType": "Technical SEO",
+            "description": "Fix crawl errors, improve site speed, mobile optimization, and ensure search engines can properly index your site."
+          }
+        }
+      ]
+    },
+    {
+      /* 6. ItemList for Products (Recommended SEO Tools) */
+      "@type": "ItemList",
+      "name": "Recommended SEO Tools",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "Semrush",
+            "url": "https://seoservicesus.github.io/products/semrush",
+            "description": "All-in-one SEO toolkit for keyword research, competitor analysis, and site audits."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "name": "Mangools",
+            "url": "https://seoservicesus.github.io/products/mangools",
+            "description": "User-friendly SEO tools including KWFinder for keyword research and SERPWatcher."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Product",
+            "name": "AccuRanker",
+            "url": "https://seoservicesus.github.io/products/accuranker",
+            "description": "Lightning-fast rank tracking with accurate data and comprehensive reporting."
+          }
+        }
+        /* ... add remaining products/tools here */
+      ]
+    },
+    {
+      /* 7. ItemList for Plugins (SoftwareApplication Type) - Example for Elementor Pro */
+      "@type": "ItemList",
+      "name": "Premium WordPress Plugins",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Elementor Pro",
+            "url": "https://seoservicesus.github.io/plugins/elementor-pro",
+            "applicationCategory": "WebPageBuilder",
+            "operatingSystem": "WordPress",
+            "offers": {
+              "@type": "Offer",
+              "price": "59",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            },
+            "description": "The #1 WordPress page builder with drag-and-drop interface and 100+ templates."
+          }
+        }
+        /* ... add remaining plugins here using SoftwareApplication or Product */
+      ]
+    }
+  ]
+}
+        </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional SEO Services - On-page, Off-page, and Technical SEO solutions to boost your website rankings. Expert SEO consulting and optimization services.">
