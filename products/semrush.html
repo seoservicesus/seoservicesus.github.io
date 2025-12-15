@@ -2,88 +2,138 @@
 <html lang="en">
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJEQY1K8BX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      gtag('config', 'G-DJEQY1K8BX');
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Semrush",
-      "applicationCategory": "SEO Software",
-      "operatingSystem": "Web-based",
-      "offers": {
-        "@type": "Offer",
-        "price": "129.95",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      },
-      "description": "The ultimate all-in-one tool suite for improving online visibility and discovering marketing insights."      
-    }
-    </script>
-
+  gtag('config', 'G-DJEQY1K8BX');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Semrush Review & Discount - The #1 SEO Tool for Keyword Research, Site Audits, and Competitor Analysis. Start your free trial today.">
-    <meta name="keywords" content="Semrush review, Semrush pricing, SEO tools, keyword research tool, competitor analysis">
-    <meta property="og:title" content="Semrush Review - The Ultimate SEO Toolkit">
-    <meta property="og:description" content="Dominate your competition with the world's leading SEO platform.">
-    <meta property="og:type" content="product">
-    
-    <title>Semrush Review | SEO Services US</title>
+    <meta name="description" content="Semrush: The ultimate all-in-one SEO and digital marketing toolkit for keyword research, competitor analysis, content creation, and site audits.">
+    <meta name="keywords" content="Semrush, SEO tool, keyword research, competitor analysis, site audit, digital marketing, SEO toolkit">
+    <meta name="author" content="SEO Services US">
+    <title>Semrush - All-in-One SEO & Marketing Toolkit | SEO Services US</title>
     <link rel="stylesheet" href="styles.css">
-    
     <style>
-        /* Specific tweaks for the product page */
-        .product-hero-badge {
-            background-color: #ff642d; /* Semrush Orange */
-            color: #fff;
+        /* Product Specific Styles - Keeping them local for clarity */
+        .product-detail-section {
+            padding: var(--spacing-xl) 0;
+            background-color: var(--color-bg);
+            border-bottom: var(--border-width) solid var(--color-border);
         }
-        
-        .feature-check-list {
+
+        .product-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+            align-items: flex-start;
+        }
+
+        .product-content h1 {
+            font-family: var(--font-heading);
+            font-size: 4rem;
+            line-height: 1;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-dark);
+            text-transform: uppercase;
+        }
+
+        .product-content h1 .accent {
+            color: var(--color-primary);
+        }
+
+        .product-content p {
+            font-size: 1.1rem;
+            margin-bottom: var(--spacing-md);
+            line-height: 1.7;
+        }
+
+        .feature-list {
             list-style: none;
-            margin-top: 2rem;
+            margin-bottom: var(--spacing-lg);
         }
-        
-        .feature-check-list li {
-            margin-bottom: 1rem;
+
+        .feature-list li {
+            font-size: 1rem;
             font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            padding: var(--spacing-xs) 0;
+            border-bottom: 2px dashed rgba(45, 45, 45, 0.2);
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-list li::before {
+            content: "▶";
+            color: var(--color-secondary);
+            margin-right: var(--spacing-xs);
+            font-weight: 900;
+        }
+
+        .product-image-box {
+            background-color: var(--color-accent);
+            border: var(--border-width) solid var(--color-border);
+            padding: var(--spacing-md);
+            box-shadow: 10px 10px 0 var(--color-primary);
+            position: relative;
+            animation: slideInRight 1s ease forwards;
+            opacity: 0;
+            animation-delay: 0.3s;
         }
         
-        .feature-check-list li::before {
-            content: "✓";
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 25px;
-            height: 25px;
-            background: var(--color-success);
-            border: 2px solid var(--color-border);
-            font-weight: 900;
-            font-size: 0.8rem;
+        @keyframes slideInRight {
+          from {
+            transform: translateX(50px);
+            opacity: 0;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+          }
         }
 
-        .rating-box {
-            background: var(--color-white);
+
+        .product-image-box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
             border: var(--border-width) solid var(--color-dark);
-            padding: 1rem;
-            display: inline-block;
-            box-shadow: 4px 4px 0 var(--color-dark);
-            margin-top: 2rem;
         }
 
-        .star-rating {
-            color: #ffed00; /* Yellow */
-            text-shadow: 2px 2px 0 #000;
-            font-size: 1.5rem;
+        .product-cta-badge {
+            display: inline-block;
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border: var(--border-width) solid var(--color-dark);
+            font-weight: 900;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            margin-bottom: var(--spacing-sm);
+            transform: rotate(-3deg);
+        }
+
+        .cta-container {
+            margin-top: var(--spacing-lg);
+        }
+
+        /* Responsive adjustments for this page */
+        @media (max-width: 1024px) {
+            .product-detail-grid {
+                grid-template-columns: 1fr;
+            }
+            .product-image-box {
+                margin-top: var(--spacing-md);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .product-content h1 {
+                font-size: 3rem;
+            }
         }
     </style>
 </head>
@@ -106,173 +156,32 @@
         </div>
     </nav>
 
-    <header class="services-page-hero">
-        <div class="container services-hero-content">
-            <div class="hero-badge product-hero-badge">RECOMMENDED TOOL</div>
-            <h1 class="services-page-title">
-                <span class="title-line">MASTER YOUR</span>
-                <span class="title-line accent">DIGITAL</span>
-                <span class="title-line">MARKETING</span>
-            </h1>
-            <p class="services-hero-description">
-                Semrush is the definitive toolkit for SEO professionals. From keyword magic to backlink audits, it's the only tool you need to outrank the competition.
-            </p>
-            
-            <div class="hero-cta">
-                <a href="YOUR_AFFILIATE_LINK_HERE" class="btn btn-primary btn-large">Try Semrush Free</a>
-                <a href="#features" class="btn btn-secondary btn-large">Read Review</a>
-            </div>
-
-            <div class="services-hero-stats">
-                <div class="stat-box">
-                    <div class="stat-value">21B+</div>
-                    <div class="stat-text">Keywords</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value">808M+</div>
-                    <div class="stat-text">Domain Profiles</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value">140+</div>
-                    <div class="stat-text">Geo Databases</div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section class="services-overview-section">
+    <section class="product-detail-section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">WHY SEMRUSH?</h2>
-                <p class="section-subtitle">The industry standard for a reason</p>
-            </div>
-            
-            <div class="services-detailed-grid">
-                <div class="detailed-service-card" style="padding: 2rem;">
-                    <h3 class="service-title">Complete Visibility</h3>
-                    <p class="service-description">
-                        Semrush isn't just an SEO tool; it's a full visibility management platform. Whether you are running PPC campaigns, social media strategies, or content marketing, Semrush gives you the data you need to make profitable decisions.
-                    </p>
-                    <ul class="feature-check-list">
-                        <li>Uncover millions of national & local keywords</li>
-                        <li>Analyze any domain's backlink profile</li>
-                        <li>Run technical SEO audits in minutes</li>
-                        <li>Track your SERP positions daily</li>
-                    </ul>
+            <div class="product-detail-grid">
+                <div class="product-content animate-on-scroll">
+                    <div class="product-cta-badge">Our #1 Recommended Tool</div>
+                    <h1>SEMRUSH: <span class="accent">DOMINATE</span> THE SERPS</h1>
+                    <p>Semrush is the most powerful all-in-one marketing platform, trusted by over 7 million users worldwide. It provides comprehensive tools for every aspect of digital marketing: SEO, PPC, SMM, content marketing, and competitive research.</p>
+
+                    <p>Stop guessing and start leveraging data. With Semrush, you gain deep insights into your competitor's strategies, discover untapped keyword opportunities, and audit your site for technical errors that hurt your rankings.</p>
                     
-                    <div class="rating-box">
-                        <div class="star-rating">★★★★★</div>
-                        <div style="font-weight:bold; margin-top:5px;">4.8/5 Editor's Choice</div>
+                    <h3>Key Features & Benefits</h3>
+                    <ul class="feature-list">
+                        <li>**Keyword Research:** Find profitable, low-competition keywords instantly.</li>
+                        <li>**Competitor Analysis:** See competitor's organic and paid keywords, and top performing pages.</li>
+                        <li>**Site Audit:** Comprehensive report on 130+ technical and SEO errors.</li>
+                        <li>**Link Building:** Discover backlink opportunities and perform outreach efficiently.</li>
+                        <li>**Content Marketing:** Tools to create, optimize, and measure content performance.</li>
+                    </ul>
+
+                    <div class="cta-container">
+                        <a href="https://wa.me/923402324446?text=Hi!%20I%20want%20details%20about%20Semrush%20Pro%20Plan%20services" class="btn btn-primary btn-large">Try Semrush for Free!</a>
                     </div>
                 </div>
-
-                <div class="detailed-service-card" style="background-color: var(--color-secondary); display:flex; align-items:center; justify-content:center; padding: 2rem;">
-                    <div style="text-align:center; color: var(--color-dark);">
-                        <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-                            <line x1="8" y1="21" x2="16" y2="21" />
-                            <line x1="12" y1="17" x2="12" y2="21" />
-                        </svg>
-                        <h3 style="font-family:var(--font-heading); margin-top:1rem;">DASHBOARD VIEW</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="features" class="services-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">POWERFUL FEATURES</h2>
-                <p class="section-subtitle">Everything you need to rank #1</p>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🔍</div>
-                    <h3 class="service-title">Keyword Magic</h3>
-                    <p class="service-description">Access the largest keyword database on the market. Find long-tail keywords with low difficulty and high potential.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">⚔️</div>
-                    <h3 class="service-title">Competitor Analysis</h3>
-                    <p class="service-description">Spy on your competitors' traffic strategies. See their top keywords, backlinks, and ad budgets instantly.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🚑</div>
-                    <h3 class="service-title">Site Audit</h3>
-                    <p class="service-description">A high-speed crawler that checks your site health and provides actionable solutions for technical issues.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🔗</div>
-                    <h3 class="service-title">Backlink Analytics</h3>
-                    <p class="service-description">Conduct deep link analysis. Find toxic links that hurt your ranking and discover new outreach opportunities.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">📝</div>
-                    <h3 class="service-title">Content Template</h3>
-                    <p class="service-description">Get data-driven recommendations for your content. Semrush analyzes top 10 rivals to tell you exactly what to write.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">📊</div>
-                    <h3 class="service-title">Rank Tracking</h3>
-                    <p class="service-description">Monitor your daily rankings for target keywords across specific locations and device types.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="hosting-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">CHOOSE YOUR POWER</h2>
-                <p class="section-subtitle">Flexible plans for every stage of growth</p>
-            </div>
-
-            <div class="hosting-grid">
-                <div class="hosting-card">
-                    <div class="hosting-logo">PRO</div>
-                    <p class="hosting-description">For freelancers, startups, and in-house marketers with a limited budget.</p>
-                    <div class="hosting-price">$129.95<span>/mo</span></div>
-                    <ul class="service-features">
-                        <li>5 Projects</li>
-                        <li>500 Keywords to track</li>
-                        <li>10,000 results per report</li>
-                        <li>Competitor Analysis</li>
-                    </ul>
-                    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn btn-secondary" style="width:100%; text-align:center; display:block;">Start Free Trial</a>
-                </div>
-
-                <div class="hosting-card featured">
-                    <div class="hosting-badge">MOST POPULAR</div>
-                    <div class="hosting-logo">GURU</div>
-                    <p class="hosting-description">For SMBs and growing agencies. Includes Content Marketing Toolkit.</p>
-                    <div class="hosting-price">$249.95<span>/mo</span></div>
-                    <ul class="service-features">
-                        <li>15 Projects</li>
-                        <li>1,500 Keywords to track</li>
-                        <li>Historical Data</li>
-                        <li>Content Marketing Platform</li>
-                    </ul>
-                    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn btn-primary" style="width:100%; text-align:center; display:block;">Start Free Trial</a>
-                </div>
-
-                <div class="hosting-card">
-                    <div class="hosting-logo">BUSINESS</div>
-                    <p class="hosting-description">For agencies, E-commerce projects, and businesses with extensive web presence.</p>
-                    <div class="hosting-price">$499.95<span>/mo</span></div>
-                    <ul class="service-features">
-                        <li>40 Projects</li>
-                        <li>5,000 Keywords to track</li>
-                        <li>Share of Voice metric</li>
-                        <li>API Access</li>
-                    </ul>
-                    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn btn-secondary" style="width:100%; text-align:center; display:block;">Start Free Trial</a>
+                
+                <div class="product-image-box">
+                    <img src="https://via.placeholder.com/600x400/1a1a1a/ffed00?text=SEMRUSH+DASHBOARD" alt="Semrush Dashboard Screenshot Placeholder">
                 </div>
             </div>
         </div>
@@ -281,12 +190,12 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2 class="cta-title">READY TO CRUSH IT?</h2>
-                <p class="cta-description">Join 10 million marketing professionals who use Semrush to dominate their niche.</p>
+                <h2 class="cta-title">READY TO GET THE #1 SEO TOOL?</h2>
+                <p class="cta-description">Start your free trial today and access the full suite of professional SEO and marketing tools.</p>
                 <div class="cta-buttons">
-                    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn btn-primary btn-large">Get 7-Day Free Trial</a>
+                    <a href="YOUR_SEMRUSH_AFFILIATE_LINK" class="btn btn-primary btn-large">Get Semrush Now</a>
+                    <a href="/#contact" class="btn btn-secondary btn-large">Need a Custom Strategy?</a>
                 </div>
-                <p style="margin-top: 1rem; opacity: 0.7; font-size: 0.8rem;">*This page contains affiliate links. We may earn a commission if you buy through our links.</p>
             </div>
         </div>
     </section>
@@ -299,30 +208,78 @@
                     <p class="footer-text">SEO Services US is a leading search engine optimization agency dedicated to helping businesses dominate search results and drive organic growth.</p>
                     <div class="footer-social">
                         <a href="#" aria-label="Twitter">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
                         </a>
                         <a href="#" aria-label="LinkedIn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
                         </a>
                     </div>
                 </div>
 
                 <div class="footer-widget">
-                    <h3 class="footer-widget-title">Quick Links</h3>
+                    <h3 class="footer-widget-title">Pages</h3>
                     <ul class="footer-links">
                         <li><a href="/">Home</a></li>
-                        <li><a href="/#services">Services</a></li>
-                        <li><a href="/#products">Tools</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/case-studies">Case Studies</a></li>
                         <li><a href="/contact">Contact</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
                     </ul>
                 </div>
+
+                <div class="footer-widget">
+                    <h3 class="footer-widget-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="/services/on-page-seo">On-Page SEO</a></li>
+                        <li><a href="/services/off-page-seo">Off-Page SEO</a></li>
+                        <li><a href="/services/technical-seo">Technical SEO</a></li>
+                        <li><a href="/services/local-seo">Local SEO</a></li>
+                        <li><a href="/services/ecommerce-seo">E-commerce SEO</a></li>
+                        <li><a href="/services/seo-audit">SEO Audit</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h3 class="footer-widget-title">Newsletter</h3>
+                    <p class="footer-text">Subscribe to our newsletter for SEO tips, industry insights, and exclusive offers.</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
             </div>
+
             <div class="footer-bottom">
-                <p class="footer-credits">© 2025 SEO Services US. All rights reserved.</p>
+                <p class="footer-credits">© 2025 SEO Services US. All rights reserved. | Designed & Developed with ❤️ for SEO Excellence</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Placeholder for the external script.js content
+        // You would typically include the full script.js here or ensure it's loaded.
+        // For the sake of the 'animate-on-scroll' class, a basic observer is assumed to be in script.js.
+        // I will add a simple placeholder to trigger the initial animation if needed.
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const productContent = document.querySelector('.product-content');
+            const productImageBox = document.querySelector('.product-image-box');
+
+            // Simple class to trigger the animation on load if the full script.js isn't available
+            productContent.classList.add('animated');
+        });
+    </script>
 </body>
 </html>
